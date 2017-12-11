@@ -1,5 +1,5 @@
 #!/bin/bash
-tail /home/vagrant/relatorio &> out &
+tail ./relatorio &> out &
 dialog                                         \
    --title 'Relatório Atual'  \
    --tailbox out                               \
