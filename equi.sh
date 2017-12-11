@@ -1,4 +1,4 @@
 #!/bin/bash
 dialog  --title 'Equipamentos monitorados'   \
- --tailbox /home/vagrant/monitorados.csv      \
+ --tailbox ./monitorados.csv      \
    0 0
