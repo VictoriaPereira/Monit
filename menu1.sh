@@ -12,10 +12,10 @@ dialog --stdout \
 0 'Sair' )
 [ $? -ne 0 ] && break
 case "$resposta" in
-1) /home/vagrant/reatu.sh ;;
-2) /home/vagrant/recomp.sh ;;
-3) /home/vagrant/iniciar.sh ;;
-4) /home/vagrant/equi.sh ;;
+1) ./reatu.sh ;;
+2) ./recomp.sh ;;
+3) ./iniciar.sh ;;
+4) ./equi.sh ;;
 0) clear ; exit 0 ;;
 *) echo "Opção invalida" ;;
 esac
