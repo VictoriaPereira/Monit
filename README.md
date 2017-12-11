@@ -7,11 +7,9 @@
 
 
 1. Estar logado como ROOT
-2. Este script substituirá
-instalações anteriores
-3. Execute
-        # bash tudo.sh
-4. Qualquer erro contate:
+2. Execute
+  # bash tudo.sh
+3. Qualquer erro contate:
         pereira.2003@outlook.com
 
 
@@ -21,11 +19,9 @@ instalações anteriores
 
 
 1. Estar logado como ROOT
-2. Este script removerá
-instalações anteriores
-3. Execute
+2. Execute
   # bash remove.sh
-4. Qualquer erro contate:
+3. Qualquer erro contate:
         <pereira.2003@outlook.com>
 
 
@@ -44,4 +40,5 @@ Autores
 
 
 Victoria Pereira <pereira.2003@outlook.com> --
-Kennedy Eduardo <kennedy-eduardo10@hotmail.com>
+Kennedy Eduardo <kennedy-eduardo10@hotmail.com> --
+Matheus Custódio <matheus_custodio2017@hotmail.com> 
