@@ -43,5 +43,5 @@ Autores
 ##############################
 
 
-Victoria Pereira <pereira.2003@outlook.com>
+Victoria Pereira <pereira.2003@outlook.com> --
 Kennedy Eduardo <kennedy-eduardo10@hotmail.com>
