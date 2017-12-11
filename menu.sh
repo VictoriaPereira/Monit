@@ -11,11 +11,11 @@ while : ; do
 	0 'Sair' )
 	[ $? -ne 0 ] && break
 	case "$resposta" in
-		1) /home/vagrant/add.sh ;;
-		2) /home/vagrant/reatu.sh ;;
-		3) /home/vagrant/recomp.sh ;;
-		4) /home/vagrant/iniciar.sh ;;
-		5) /home/vagrant/equi.sh ;;
+		1) ./add.sh ;;
+		2) ./reatu.sh ;;
+		3) ./recomp.sh ;;
+		4) ./iniciar.sh ;;
+		5) ./equi.sh ;;
 		0) clear ; exit 0 ;;
 		*) echo "Opção invalida" ;;
 	esac
