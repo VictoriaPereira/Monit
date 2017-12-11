@@ -1,5 +1,5 @@
 #!/bin/bash
-tail /home/vagrant/relatoriolog &> oi &
+tail ./relatoriolog &> oi &
 dialog                                      \
    --title 'Relatório Completo' 	     \
    --tailbox oi                               \
