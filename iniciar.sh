@@ -9,6 +9,7 @@ dialog --stdout \
 2 'Parar serviço'   \
 3 'Status do serviço'  \
 4 'Voltar ao menu principal' )
+[[ $? -ne 0 ]] && break
 case "$resposta" in
 1) iniciar ;;
 2) parar ;;
