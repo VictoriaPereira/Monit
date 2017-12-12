@@ -43,7 +43,7 @@ menu(){
 	1 'Adicionar equipamento' 										\
 	2 'Remover equipamento' 											\
 	3 'Voltar ao menu principal')
-	[[ $? -ne 0 ]] 
+	[[ $? -ne 0 ]] && break
 	case "$oi" in
 	1) adicionar ;;
 	2) remover ;;
