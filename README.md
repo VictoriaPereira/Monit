@@ -2,6 +2,9 @@
  
  
 #################################
+Veja nosso manual no repositório 
+        "manual"
+#################################
  Como Instalar
 #################################
 
@@ -9,6 +12,7 @@
 1. Estar logado como ROOT
 2. Execute
   # bash tudo.sh
+  
 3. Qualquer erro contate:
         pereira.2003@outlook.com
 
