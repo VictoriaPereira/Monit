@@ -1,8 +1,9 @@
 #!/bin/bash
 falhou(){ dialog --msgbox "Usuário e senha inválidos" 0 0 ; login ; }
 login(){
-usuario=$(dialog --stdout --inputbox "Login: " 0 0) || break
-senha=$(dialog --stdout --passwordbox "Senha: " 0 0) || break
+usuario=$(dialog --stdout --inputbox "Login: " 0 0)
+senha=$(dialog --stdout --passwordbox "Senha: " 0 0) 
+[[ $? -ne 0 ]] && break
 [[ $usuario == "admin" ]] && [[ $senha == "admin" ]] && . menu.sh
 [[  $usuario == "senaisp" ]] && [[ $senha == "senaisp" ]] && .  menu1.sh || falhou
 }
