@@ -9,7 +9,7 @@ while : ; do
 	4 'Opções do serviço' 					\
 	5 'Equipamentos monitorados' 				\
 	0 'Sair' )
-	[[ $? -ne 0 ]] && break
+	[[ $? -ne 0 ]] && exit 0
 	case "$resposta" in
 		1) ./add.sh ;;
 		2) ./reatu.sh ;;
