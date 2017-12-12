@@ -10,7 +10,7 @@ dialog --stdout \
 3 'Opções de serviço' \
 4 'Equipamentos monitorados' \
 0 'Sair' )
-[[ $? -ne 0 ]] && break
+[[ $? -ne 0 ]] && exit 0
 case "$resposta" in
 1) ./reatu.sh ;;
 2) ./recomp.sh ;;
