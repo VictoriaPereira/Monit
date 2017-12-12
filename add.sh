@@ -1,6 +1,6 @@
 #!/bin/bash
 paraerro(){
-	dialog --msgbox "Valor digitado na variável $1 é inválido" 0 0 ; menu
+	dialog --msgbox "Valor digitado na variável $1 é inválido!" 0 0 ; menu
 }
 adicionar(){
 	NOME=$(dialog --stdout --inputbox 'Nome do equipamento:' 0 0)
@@ -10,8 +10,8 @@ adicionar(){
 	if [[ $(egrep '^[a-zA-Z]{1,8}[0-9]{0,4}$' NOME) ]] ; then
 		if [[ $(egrep '^([0-9]{1,3}\.{0,1}){4}$' IP) ]] ; then
 			if [[ ! $(grep $IP$ monitorados.csv) ]] ; then
-	  		MSG='Equipamento adicionado com sucesso!!!!'
- 				echo "$NOME;$IP" >> monitorados.csv && dialog --msgbox "$MSG" 6 40
+	  		MSG='Equipamento adicionado com sucesso!!'
+ 				echo "$NOME;$IP" >> monitorados.csv && dialog --msgbox "$MSG" 0 0
 			else
 				dialog --msgbox "Este IP já existe!" 0 0 ; menu
 			fi
