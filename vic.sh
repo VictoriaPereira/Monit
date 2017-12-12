@@ -1,6 +1,7 @@
 #!/bin/bash
 falhou(){ dialog --msgbox "Usuário e senha inválidos" 0 0 ; login ; }
 login(){
+[[ $? -ne 0 ]] && exit 0
 usuario=$(dialog --stdout --inputbox "Login: " 0 0)
 senha=$(dialog --stdout --passwordbox "Senha: " 0 0)
 [[ $usuario == "admin" ]] && [[ $senha == "admin" ]] && . menu.sh
