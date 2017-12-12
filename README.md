@@ -2,7 +2,8 @@
  
  
 #################################
-Veja nosso manual no repositório 
+Veja nosso manual no repositório neste mesmo github 
+################################
 
 
 
