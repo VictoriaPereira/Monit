@@ -21,6 +21,13 @@ adicionar(){
 	else
 		paraerro NOME
 	fi
+	  if [[ $NOME == "" || $IP == "" ]]
+	then
+		dialog							\
+		--title 'Erro'						\
+		--msgbox 'Nenhum campo pode ficar vazio.'		\
+		0 0
+fi
 	menu
 }
 remover(){
