@@ -5,9 +5,12 @@
 Veja nosso manual no repositório neste mesmo github 
 ####################
 
+     "manual"
+     
+*é de extrema importância a leitura do manual para a
+utilização do programa*
 
-
-        "manual"
+        
         
         
 #################################
@@ -34,14 +37,6 @@ Veja nosso manual no repositório neste mesmo github
 3. Qualquer erro contate:
         <pereira.2003@outlook.com>
 
-
-##############################
- Licença
-##############################
-
-
-Este aplicativo esta licenciado
-sob GPL 2.0
 
 
 ##############################
