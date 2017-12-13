@@ -18,7 +18,7 @@ utilização do programa*
 #################################
 
 
-1. Estar logado como ROOT
+1. Estar logado como ROOT e ter acesso a internet
 2. Execute
   # bash tudo.sh
   
