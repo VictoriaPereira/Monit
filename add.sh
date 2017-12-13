@@ -30,12 +30,12 @@ adicionar(){
 fi
 	menu
 }
+
 remover(){
-  IP=$(dialog --stdout --inputbox 'IP do equipamento a ser removido:' 0 0)
-  	[[ $? -ne 0 ]] && menu.sh
-	if [[ $(grep $IP$ monitorados.csv) ]] ; then
+  ip=$(dialog --stdout --inputbox 'IP do equipamento a ser removido:' 0 0)
+	if [[ $(grep $ip$ monitorados.csv) ]] ; then
 		cp monitorados.csv backup/bkp.$(date +'%Y%m%d%H%M%S')
-		cat $IP monitorados.csv | sed "/$IP/d" > monitorados.bkp
+		cat monitorados.csv | sed "/$ip/d" > monitorados.bkp
 		cat monitorados.bkp > monitorados.csv
 		dialog --msgbox "Equipamento monitorado removido" 0 0
 		menu
@@ -44,6 +44,7 @@ remover(){
 		menu
 	fi
 }
+
 menu(){
 	oi=$( dialog --stdout \
         --title 'Equipamentos' 	\
