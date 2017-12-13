@@ -32,10 +32,14 @@ fi
 }
 
 remover(){
-  ei=$(dialog --stdout --inputbox 'IP do equipamento a ser removido:' 0 0)
-	if [[ $(grep $ei$ monitorados.csv) ]] ; then
+  ip=$(dialog --stdout --inputbox 'IP do equipamento a ser removido:' 0 0)
+  		if [[ $ip == "" ]]
+	then
+		menu
+	fi
+	if [[ $(grep $ip$ monitorados.csv) ]] ; then
 		cp monitorados.csv backup/bkp.$(date +'%Y%m%d%H%M%S')
-		cat $ei monitorados.csv | sed "/$ei$/d" > monitorados.bkp || dialog --msgbox "R" 0 0
+		cat $ip monitorados.csv | sed "/$ip$/d" > monitorados.bkp 
 		cat monitorados.bkp > monitorados.csv
 		dialog --msgbox "Equipamento monitorado removido" 0 0
 		menu
